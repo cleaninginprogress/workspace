@@ -1,0 +1,8 @@
+prefix=/home/maxmurr/Develop/cleaninginprogress_ws/devel
+
+Name: nlp
+Description: Description of nlp
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

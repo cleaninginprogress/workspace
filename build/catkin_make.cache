@@ -1,0 +1,2 @@
+detection:nlp
+-DCATKIN_DEVEL_PREFIX=/home/maxmurr/Develop/cleaninginprogress_ws/devel -DCMAKE_INSTALL_PREFIX=/home/maxmurr/Develop/cleaninginprogress_ws/install -G Unix Makefiles
