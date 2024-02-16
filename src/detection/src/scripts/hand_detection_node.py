@@ -11,7 +11,6 @@ topicName='video_topic'
 
 class HandDetectionNode():
   def __init__(self):
-    topicName='video_topic'
     self.sub = rospy.Subscriber(topicName, Image, callback=self.videoCallback)
     rospy.wait_for_message(topicName, Image)
     self.pub = rospy.Publisher("hand_detection_result", String, queue_size=10)
@@ -81,11 +80,9 @@ class HandDetectionNode():
         H = L + R
         if H == 1:
           cv2.putText(image, "Left", (500,50), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0,0,255), 2)
-          rospy.loginfo("Left")
           self.pub.publish("Left")
         elif H == 2:
           cv2.putText(image, "Right", (500,50), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (0,0,255), 2)
-          rospy.loginfo("Right")
           self.pub.publish("Right")
 
         if results.multi_hand_landmarks == None:

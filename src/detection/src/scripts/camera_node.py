@@ -17,7 +17,6 @@ class CameraNode():
     while not rospy.is_shutdown():
       returnValue, capturedFrame = self.videoCaptureObject.read()
       if returnValue == True:
-        rospy.loginfo("Captured frame")
         imageToTransmit=self.bridgeObject.cv2_to_imgmsg(capturedFrame, "bgr8")
         self.publisher.publish(imageToTransmit)
 

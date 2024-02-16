@@ -1,0 +1,5 @@
+<launch>
+	<node name="camera_sensor_publisher" pkg="detection" type="camera_node.py"/>
+	<node name="hand_detection_subscriber" pkg="detection" type="hand_detection_node.py" output="screen"/>
+	<node name="gtts_node" pkg="nlp" type="gtts_node.py"/>
+</launch>
