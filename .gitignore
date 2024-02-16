@@ -1,4 +1,8 @@
 env
 .vscode
-build
-devel
+build/
+devel/
+__pycache__
+setup_cached.sh
+package.cmake
+package.xml.stamp
