@@ -13,4 +13,3 @@ speechrecognition
 pyttsx3
 gTTS
 pydub
-opencv
