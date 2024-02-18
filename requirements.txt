@@ -11,13 +11,11 @@ speechrecognition
 pyttsx3
 gTTS
 pydub
-<<<<<<< HEAD
 flatbuffers~=1.12.0
 gast==0.4.0
 grpcio~=1.34.0
 h5py~=3.1.0
-numpy~=1.19.2
+#numpy~=1.19.2
+numpy>=1.20
 tensorboard~=2.5
 tensorflow-estimator<2.6.0,>=2.5.0rc0
-=======
->>>>>>> 06b8d946abc29c235b2ce718d83a431824e4c277
